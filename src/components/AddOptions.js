@@ -9,6 +9,7 @@ class AddOptions extends React.Component {
     }
   }
   handleAddOption(e) {
+    console.log(e.target.elements);
     e.preventDefault();
     const option = e.target.elements.option.value.trim();
 
@@ -17,7 +18,7 @@ class AddOptions extends React.Component {
     this.setState(() => ({ error }));
 
     if(!error) {
-      e.terget.elements.option.value = '';
+      e.target.elements.option.value = '';
     }
   }
   render() {
