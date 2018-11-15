@@ -3,11 +3,13 @@ import AddOptions from './AddOptions';
 import Options from './Options';
 import Header from './Header';
 import Actions from './Actions';
+import OptionModal from './OptionModal';
 
 
 class IndecisionApp extends React.Component {
   state = {
-    options: []
+    options: [],
+    selectedOption: false,
   }
 
   handleDeleteOptions = () => {
@@ -33,6 +35,11 @@ class IndecisionApp extends React.Component {
       return 'This options already exist'
     }
     this.setState((prevState) => ({ options: prevState.options.concat(option) }));
+    this.setState({selectedOption: option});
+  }
+
+  closeModal = () => {
+    this.setState({selectedOption: false})
   }
 
   componentDidMount() {
@@ -65,6 +72,11 @@ class IndecisionApp extends React.Component {
 
   render() {
     const subtitle = 'Put your life in the hands of a computer';
+    const {
+      selectedOption,
+      options
+    } = this.state;
+
     return (<div>
       <Header subtitle={subtitle}/>
       <Actions
@@ -72,12 +84,16 @@ class IndecisionApp extends React.Component {
         handlePick={this.handlePick}
       />
       <Options
-        options={this.state.options}
+        options={options}
         handleDeleteOptions={this.handleDeleteOptions}
         handleDeleteOption={this.handleDeleteOption}
       />
       <AddOptions
         handleAddOption={this.handleAddOption}
+      />
+      <OptionModal
+        selectedOption={selectedOption}
+        hideModal={this.closeModal}
       />
     </div>)
   }
