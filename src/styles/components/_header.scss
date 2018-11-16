@@ -1,0 +1,17 @@
+.header {
+  background-color: $grey;
+  color: $white;
+  margin-bottom: $xlSpacing;
+  padding: $mdSpacing 0;
+
+  &__title {
+    font-size: $lgFS;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: $mdFS;
+    color: $white2;
+    font-weight: $mediumFW;
+  }
+}

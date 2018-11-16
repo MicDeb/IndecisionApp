@@ -1,0 +1,25 @@
+.widget {
+  background: $lightBlue;
+  margin-bottom: $lgSpacing;
+
+  &-header {
+    background-color: $blue;
+    color: $white;
+    padding: $mdSpacing;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      margin: 0;
+    }
+  }
+
+  &__message {
+    color: $white2;
+    margin: 0;
+    padding: $lgSpacing;
+    text-align: center;
+    border-bottom: .1rem solid lighten($lightBlue, 10%);
+  }
+}
