@@ -9,6 +9,7 @@
 
   &-form {
     display: flex;
+    flex-direction: column;
     padding: $spacing-md;
 
     &__input {
@@ -16,9 +17,21 @@
       background: $darkBlue;
       border: none;
       border-bottom: .3rem solid darken($darkBlue, 10%);
-      margin-right: $spacing-sm;
+      margin: 0 0 $spacing-sm 0;
       color: $white2;
       padding: $spacing-sm;
+    }
+  }
+}
+
+@media (min-width: $break-md) {
+  .add-option {
+    &-form {
+      flex-direction: row;
+
+      &__input {
+        margin: 0 $spacing-sm 0 0;
+      }
     }
   }
 }

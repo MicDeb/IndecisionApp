@@ -6,7 +6,7 @@
   font-weight: $f-weight-bold;
   font-size: $f-size-lg;
   width: 100%;
-  margin-bottom: $spacing-xl;
+  margin-bottom: $spacing-lg;
   padding: $spacing-md;
 
   &:disabled {
@@ -27,5 +27,11 @@
     border: none;
     padding: 0;
     color: $white2;
+  }
+}
+
+@media (min-width: $break-md) {
+  .big-button {
+    margin-bottom: $spacing-xl;
   }
 }
