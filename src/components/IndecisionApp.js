@@ -9,7 +9,7 @@ import OptionModal from './OptionModal';
 class IndecisionApp extends React.Component {
   state = {
     options: [],
-    selectedOption: false,
+    selectedOption: undefined,
   }
 
   handleDeleteOptions = () => {
@@ -25,7 +25,7 @@ class IndecisionApp extends React.Component {
   handlePick = () => {
     const rundomNum = Math.floor(Math.random() * this.state.options.length);
     const options = this.state.options[rundomNum];
-    alert(options);
+    this.setState({selectedOption: options});
   }
 
   handleAddOption = option => {
@@ -35,7 +35,6 @@ class IndecisionApp extends React.Component {
       return 'This options already exist'
     }
     this.setState((prevState) => ({ options: prevState.options.concat(option) }));
-    this.setState({selectedOption: option});
   }
 
   closeModal = () => {
