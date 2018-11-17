@@ -2,23 +2,23 @@
 
   &-error {
     color: $errorColor;
-    padding: 0 $mdSpacing;
-    margin: $mdSpacing 0 0 0;
+    padding: 0 $spacing-md;
+    margin: $spacing-md 0 0 0;
     font-style: italic;
   }
 
   &-form {
     display: flex;
-    padding: $mdSpacing;
+    padding: $spacing-md;
 
     &__input {
       flex-grow: 1;
       background: $darkBlue;
       border: none;
       border-bottom: .3rem solid darken($darkBlue, 10%);
-      margin-right: $smSpacing;
+      margin-right: $spacing-sm;
       color: $white2;
-      padding: $smSpacing;
+      padding: $spacing-sm;
     }
   }
 }

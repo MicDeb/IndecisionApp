@@ -1,11 +1,11 @@
 .widget {
   background: $lightBlue;
-  margin-bottom: $lgSpacing;
+  margin-bottom: $spacing-lg;
 
   &-header {
     background-color: $blue;
     color: $white;
-    padding: $mdSpacing;
+    padding: $spacing-md;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
   &__message {
     color: $white2;
     margin: 0;
-    padding: $lgSpacing;
+    padding: $spacing-lg;
     text-align: center;
     border-bottom: .1rem solid lighten($lightBlue, 10%);
   }

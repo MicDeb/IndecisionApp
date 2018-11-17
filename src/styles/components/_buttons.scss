@@ -3,11 +3,11 @@
   border: none;
   border-bottom: .6rem solid darken($purple, 10%);
   color: $white;
-  font-weight: $boldFW;
-  font-size: $lgFS;
+  font-weight: $f-weight-bold;
+  font-size: $f-size-lg;
   width: 100%;
-  margin-bottom: $xlSpacing;
-  padding: $mdSpacing;
+  margin-bottom: $spacing-xl;
+  padding: $spacing-md;
 
   &:disabled {
     opacity: .5;
@@ -19,8 +19,8 @@
   border: none;
   border-bottom: .3rem solid darken($purple, 10%);
   color: $white;
-  font-weight: $mediumFW;
-  padding: $smSpacing;
+  font-weight: $f-weight-medium;
+  padding: $spacing-sm;
 
   &--link {
     background: none;

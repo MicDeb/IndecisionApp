@@ -1,13 +1,13 @@
 .option {
   display: flex;
   justify-content: space-between;
-  padding: $mdSpacing;
+  padding: $spacing-md;
   border-bottom: .1rem solid lighten($lightBlue, 10%);
 
   &__text {
     color: $white;
-    font-weight: $mdFS;
-    font-weight: $mediumFW;
+    font-weight: $f-size-md;
+    font-weight: $f-weight-medium;
     word-break: break-all;
   }
 }

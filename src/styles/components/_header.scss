@@ -1,17 +1,17 @@
 .header {
   background-color: $grey;
   color: $white;
-  margin-bottom: $xlSpacing;
-  padding: $mdSpacing 0;
+  margin-bottom: $spacing-xl;
+  padding: $spacing-md 0;
 
   &__title {
-    font-size: $lgFS;
+    font-size: $f-size-lg;
     margin: 0;
   }
 
   &__subtitle {
-    font-size: $mdFS;
+    font-size: $f-size-md;
     color: $white2;
-    font-weight: $mediumFW;
+    font-weight: $f-weight-medium;
   }
 }
